@@ -127,7 +127,7 @@
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
               <div class="form-group">
-                <label for="type-of-product">Loại sản phẩm</label>
+                <label for="type-of-product" style="font-weight: bold;">Loại sản phẩm</label>
                 <select class="form-control" id="type-of-product" name="type">
                   <option value="Điện thoại">Điện thoại</option>
                   <option value="Laptop">Laptop</option>
@@ -138,7 +138,7 @@
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
               <div class="form-group">
-                <label for="brand-of-product">Hãng</label>
+                <label for="brand-of-product" style="font-weight: bold;">Hãng</label>
                 <select class="form-control" id="brand-of-product" name="brand">
                   <option>Apple</option>
                   <option>Samsung</option>
@@ -150,88 +150,77 @@
               </div>
             </div>
           </div>
+          <hr/>
           <div class="row">
             <div class="col-xl-9 col-lg-8 col-md-8 col-sm-8 col-12">
               <div class="form-group">
-                <label for="product-name">Tên sản phẩm</label>
+                <label for="product-name" style="font-weight: bold;">Tên sản phẩm</label>
                 <input type="text" class="form-control" id="product-name" placeholder="Macbook Pro 2020 - M1" name="product_name">
               </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
               <div class="form-group">
-                <label for="product-name">Giá sản phẩm (đồng)</label>
+                <label for="product-name" style="font-weight: bold;">Giá sản phẩm (đồng)</label>
                 <input type="text" class="form-control" id="product-name" placeholder="19990000" name="product_price">
               </div>
             </div>
           </div>
+          <hr/>
           <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12" id="images">
-              <label class="form-label">Hình sản phẩm 1</label>
+              <label class="form-label" style="font-weight: bold;">Hình sản phẩm 1</label>
               <input type="file" class="form-control image_product"/>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12" id="images">
-              <label class="form-label">Hình sản phẩm 2</label>
+              <label class="form-label" style="font-weight: bold;">Hình sản phẩm 2</label>
               <input type="file" class="form-control image_product"/>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12" id="images">
-              <label class="form-label">Hình sản phẩm 3</label>
+              <label class="form-label" style="font-weight: bold;">Hình sản phẩm 3</label>
               <input type="file" class="form-control image_product"/>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12" id="images">
-              <label class="form-label">Hình sản phẩm 4</label>
+              <label class="form-label" style="font-weight: bold;">Hình sản phẩm 4</label>
               <input type="file" class="form-control image_product"/>
             </div>
           </div>
+          <hr/>
           <div class="row">
             <div class="col-12">
               <div class="form-group">
-                <label for="product-description">Mô tả sản phẩm</label>
+                <label for="product-description" style="font-weight: bold;">Mô tả sản phẩm</label>
                 <textarea class="form-control" id="product-description" rows="6"></textarea>
               </div>
             </div>
           </div>
           <hr/>
           <div class="row">
-            <div class="col-12">
-              Cấu hình sản phẩm
+            <div class="col-12" style="font-weight: bold;">Cấu hình sản phẩm</div>
+          </div>
+          <div class="row" id="config_admin_frame">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <label>Đặc điểm 1</label>
+              <input type="text" class="form-control" name="description_1"/>
             </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <label>Thông số kỹ thuật 1</label>
+              <input type="text" class="form-control" name="param_1"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <a class="btn btn-outline-primary" onclick="javascript:add_configuration();">Thêm thông tin cấu hình</a>
+            </div>
+            <span id="count_config" name="count_config" hidden>1</span>
           </div>
           <hr/>
           <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-              <label for="product-description">Đặc điểm</label>
-              <input type="text" class="form-control"/>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-              <label for="product-description">Thông số kỹ thuật</label>
-              <textarea class="form-control"></textarea> 
-            </div>
-          </div>
-          <div class="row">
             <div class="col-12">
-              <a class="btn btn-outline-primary">Thêm thông tin cấu hình</a>
+              <button type="submit" class="btn btn-primary btn-block" style="border-color: #05206e; color:white; background-color: #05206e;">Thêm sản phẩm mới</button>
             </div>
           </div>
         </form>
       </div>
-      <!-- <footer class="footer" style="position: absolute; bottom: 0; width: -webkit-fill-available;">
-        <div class="container-fluid">
-          <div class="row">
-            <nav class="footer-nav">
-              <ul>
-                <li><a href="https://www.creative-tim.com" target="_blank">Link trang web</a></li>
-                <li><a href="https://www.creative-tim.com/blog" target="_blank">Cơ sở dữ liệu</a></li>
-                <li><a href="https://www.creative-tim.com/license" target="_blank">Licenses</a></li>
-              </ul>
-            </nav>
-            <div class="credits ml-auto">
-              <span class="copyright">
-                © 2020, made with <i class="fa fa-heart heart"></i> by Creative Tim
-              </span>
-            </div>
-          </div>
-        </div>
-      </footer> -->
     </div>
   </div>
   <script src="./perfect-scrollbar.jquery.min.js"></script>
@@ -239,6 +228,9 @@
   <script src="./chartjs.min.js"></script>
   <script src="./assets/js/plugins/bootstrap-notify.js"></script>
   <script src="./paper-dashboard.min.js" type="text/javascript"></script>
+
+  <!-- block script -->
+  <script src="./add_product_admin.js" type="text/javascript"></script>
 </body>
 
 </html>
