@@ -10,19 +10,6 @@
     border-radius: 12px !important
 }
 
-/* .btn-light {
-    background: transparent !important;
-    border: 0px !important
-}
-
-.btn-light:hover {
-    border-color: #fff !important
-}
-
-.btn-light:active {
-    border-color: #fff !important
-} */
-
 @media (max-width: 526px) {
     .card-popup {
         width: unset;
