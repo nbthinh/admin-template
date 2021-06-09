@@ -13,6 +13,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <link href="./paper-dashboard.css" rel="stylesheet" /> <!-- Bắt buộc-->
+  <!-- <link href="./style-popup.css" rel="stylesheet" /> Bắt buộc -->
+
 </head>
 
 <body class="" style="font-family: Arial, Helvetica, sans-serif">
@@ -134,66 +136,18 @@
         </div>
       </nav>
       <div class="content">
-        <div class="row" >
+        <div class="row">
           <div class="col-md-12" style="text-align: center;">
-            <h3 class="description" style="font-weight: bold; color: #05206e;">THÔNG TIN ĐƠN HÀNG</h3>
+            <h3 class="description" style="font-weight: bold; color: #05206e;">DANH SÁCH SẢN PHẨM</h3>
           </div>
         </div>
-        <div class="row" style="font-size: 18px;">
-          <div class="col-sm-6 col-12">
-            <span style="font-weight: bold;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-              </svg>
-              Họ và tên:
-            </span>
-            <span>Nguyễn Bửu Thịnh</span>
-          </div>
-          <div class="col-sm-6 col-12">
-            <span style="font-weight: bold;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
-                <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
-              </svg>
-              Mã đơn hàng:
-            </span>
-            <span> asdfghjklzxcvbnmqwer</span>
+        <hr />
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-end">
+            <a class="btn btn-primary">Thêm sản phẩm</a>
           </div>
         </div>
-        <br/>
-        <div class="row" style="font-size: 18px;">
-          <div class="col-sm-6 col-12">
-            <span style="font-weight: bold;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-              </svg>
-              Email:
-            </span>
-            <span>thinh.nguyen0908117036@hcmut.edu.vn</span>
-          </div>
-          <div class="col-sm-6 col-12">
-            <span style="font-weight: bold;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-              </svg>
-              Số điện thoại:
-            </span>
-            <span> 0903725856</span>
-          </div>
-        </div>
-        <br/>
-        <div class="row" style="font-size: 18px">
-          <div class="col-12">
-            <span style="font-weight: bold;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
-                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
-              </svg>
-              Địa chỉ:
-            </span>
-            <span>268 Lý Thường Kiệt, quận 10</span>
-          </div>
-        </div>
-        <hr/>
+        <hr />
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -203,39 +157,23 @@
                     <thead class=" text-primary">
                       <th style="color: #05206e;">Mã SP</th>
                       <th style="color: #05206e;">Tên sản phẩm</th>
-                      <th style="color: #05206e;">Đơn giá</th>
-                      <th style="color: #05206e;">Số lượng</th>
-                      <th style="color: #05206e;">Tổng cộng</th>
+                      <th style="color: #05206e;">Giá SP</th>
+                      <th style="color: #05206e;">Tuỳ chọn</th>
+                      <th style="color: #05206e;"></th>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
                         <td>Macbook pro 2020 - M1</td>
                         <td>31.990.000 đ</td>
-                        <td>1</td>
-                        <td>31.990.000 đ</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Macbook pro 2020 - M1</td>
-                        <td>31.990.000 đ</td>
-                        <td>1</td>
-                        <td>31.990.000 đ</td>
-                      </tr>
-                      <tr>
-                        <td colspan="3" class="text-right"></td>
-                        <td style="font-weight: bold;">Tổng tiền: </td>
-                        <td>31.990.000 đ</td>
-                      </tr>
-                      <tr>
-                        <td colspan="3" class="text-right"></td>
-                        <td style="font-weight: bold;">Phí ship: </td>
-                        <td>20.000 đ</td>
-                      </tr>
-                      <tr>
-                        <td colspan="3" class="text-right"></td>
-                        <td style="font-weight: bold;">Tiền phải trả: </td>
-                        <td>40.010.000 đ</td>
+                        <td>
+                          <a class="btn btn-outline-primary">Sửa</a>
+                          <a class="btn btn-outline-danger" data-toggle="modal" data-target="#my-modal">Xoá</a>
+                        </td>
+                        <td>
+                          <input class="form-check-input position-static" type="checkbox" id="blankCheckbox"
+                            value="option1" aria-label="...">
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -247,6 +185,32 @@
         <div class="row">
           <div class="col-12">
             <a class="btn btn-outline-primary" href="javascript:history.back();">Quay trở lại</a>
+          </div>
+        </div>
+        <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+              <div class="modal-body p-0">
+                <div class="card border-0 p-sm-3 p-2 justify-content-center">
+                  <div class="card-header pb-0 bg-white border-0 ">
+                    <div class="row">
+                      <div class="col ml-auto"><button type="button" class="close" data-dismiss="modal"
+                          aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div>
+                    </div>
+                    <p class="font-weight-bold mb-2"> Are you sure you wanna delete this ?</p>
+                    <p class="text-muted "> This change will reflect in your portal after an hour.</p>
+                  </div>
+                  <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
+                    <div class="row justify-content-end no-gutters">
+                      <div class="col-auto"><button type="button" class="btn btn-light text-muted"
+                          data-dismiss="modal">Cancel</button></div>
+                      <div class="col-auto"><button type="button" class="btn btn-danger px-4"
+                          data-dismiss="modal">Delete</button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
