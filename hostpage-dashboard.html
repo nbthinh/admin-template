@@ -13,9 +13,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <link href="./paper-dashboard.css" rel="stylesheet" /> <!-- Bắt buộc-->
-
-  <link href="./style-popup.css" rel="stylesheet" />
-
 </head>
 
 <body class="" style="font-family: Arial, Helvetica, sans-serif">
@@ -138,123 +135,179 @@
       </nav>
       <div class="content">
         <div class="row">
-          <div class="col-md-12" style="text-align: center;">
-            <h3 class="description" style="font-weight: bold; color: #05206e;">DANH SÁCH SẢN PHẨM</h3>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <!-- <i class="nc-icon nc-globe text-warning"></i> -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Người dùng</p>
+                      <p class="card-title">64
+                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-refresh"></i>
+                  Update Now
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-12 d-flex justify-content-end">
-            <a class="btn btn-primary">Thêm sản phẩm</a>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-money-coins text-success"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Revenue</p>
+                      <p class="card-title">$ 1,345
+                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-calendar-o"></i>
+                  Last day
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
-            Tổng cộng 65 sản phẩm
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-vector text-danger"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Errors</p>
+                      <p class="card-title">23
+                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-clock-o"></i>
+                  In the last hour
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
-            <select class="form-control form-control-sm">
-              <option>Điện thoại</option>
-              <option>Laptop</option>
-              <option>Máy tính bảng</option>
-              <option>Đồng hồ thông minh</option>
-            </select>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
-            <select class="form-control form-control-sm">
-              <option>Điện thoại</option>
-              <option>Laptop</option>
-              <option>Máy tính bảng</option>
-              <option>Đồng hồ thông minh</option>
-            </select>
-          </div>
-        </div>
-        <hr/>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead class=" text-primary">
-                      <th style="color: #05206e;"></th>
-                      <th style="color: #05206e;">Mã SP</th>
-                      <th style="color: #05206e;">Tên sản phẩm</th>
-                      <th style="color: #05206e;">Giá SP</th>
-                      <th style="color: #05206e;">Chỉnh sửa</th>
-                      <th style="color: #05206e;">Xoá</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="{{id}}" aria-label="..." style="margin:auto;">
-                        </td>
-                        <td>1</td>
-                        <td>Macbook pro 2020 - M1</td>
-                        <td>31.990.000 đ</td>
-                        <td>
-                          <a class="btn btn-outline-primary" style="font-weight: bold !important;" href="/modify-product_{{id}}">
-                            <span>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                              </svg>
-                            </span>
-                            <span> Sửa</span>
-                          </a>
-                        </td>
-                        <td>
-                          <a class="btn btn-outline-danger" data-toggle="modal" data-target="#delete-modal-product-list" onclick="delete_product('{{id}}');" style="color:rgba(145, 0, 0, 0.795) !important; background-color: white !important; border-color: rgba(145, 0, 0, 0.795) !important; font-weight: bold !important;">
-                            <span>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-                              </svg>
-                            </span>
-                            <span> Xoá</span>
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-favourite-28 text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Followers</p>
+                      <p class="card-title">+45K
+                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-refresh"></i>
+                  Update now
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
-            <a class="btn btn-outline-primary" href="javascript:history.back();">Quay trở lại</a>
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-header ">
+                <h5 class="card-title">Users Behavior</h5>
+                <p class="card-category">24 Hours performance</p>
+              </div>
+              <div class="card-body ">
+                <canvas id=chartHours width="400" height="100"></canvas>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-history"></i> Updated 3 minutes ago
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="delete-modal-product-list" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content border-0" style="background: transparent !important;">
-              <div class="p-0" style="border-radius: 11px;">
-                <div class="card border-0 p-sm-3 p-2 justify-content-center card-popup">
-                  <div class="card-header pb-0 bg-white border-0 card-popup-header">
-                    <p class="font-weight-bold mb-2"
-                      style="font-size: calc(13px + (16 - 13) * ((100vw - 360px) / (1600 - 300))) !important; font-size: 25px !important; color: rgba(145, 0, 0, 0.795) !important; font-weight: bold !important;">
-                      Xác nhận xoá!</p>
-                    <p class="text-muted"
-                      style="font-size: calc(13px + (16 - 13) * ((100vw - 360px) / (1600 - 300))) !important;">Bạn có
-                      chắc chắn muốn xoá sản phẩm không?</p>
-                  </div>
-                  <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
-                    <div class="row justify-content-end no-gutters">
-                      <div class="col-auto">
-                        <a class="btn btn-outline-primary px-4" data-dismiss="modal"
-                          style="color:rgba(145, 0, 0, 0.795) !important; background-color: white !important; border-color:rgba(145, 0, 0, 0.795) !important;">
-                          Không xoá
-                        </a>
-                      </div>
-                      <div class="col-auto" style="margin-left: 10px !important;">
-                        <a class="btn btn-outline-primary px-4" id="delete_product_in_product_list" href="" style="color: white; background-color: rgba(145, 0, 0, 0.795) !important; border-color: rgba(145, 0, 0, 0.795) !important; font-weight: bold;">
-                          Xoá
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card ">
+              <div class="card-header ">
+                <h5 class="card-title">Email Statistics</h5>
+                <p class="card-category">Last Campaign Performance</p>
+              </div>
+              <div class="card-body ">
+                <canvas id="chartEmail"></canvas>
+              </div>
+              <div class="card-footer ">
+                <div class="legend">
+                  <i class="fa fa-circle text-primary"></i> Opened
+                  <i class="fa fa-circle text-warning"></i> Read
+                  <i class="fa fa-circle text-danger"></i> Deleted
+                  <i class="fa fa-circle text-gray"></i> Unopened
+                </div>
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-calendar"></i> Number of emails sent
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-title">NASDAQ: AAPL</h5>
+                <p class="card-category">Line Chart with Points</p>
+              </div>
+              <div class="card-body">
+                <canvas id="speedChart" width="400" height="100"></canvas>
+              </div>
+              <div class="card-footer">
+                <div class="chart-legend">
+                  <i class="fa fa-circle text-info"></i> Tesla Model S
+                  <i class="fa fa-circle text-warning"></i> BMW 5 Series
+                </div>
+                <hr />
+                <div class="card-stats">
+                  <i class="fa fa-check"></i> Data information certified
                 </div>
               </div>
             </div>
