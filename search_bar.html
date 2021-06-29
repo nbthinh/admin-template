@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Luận Văn Tốt Nghiệp</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link href="./paper-dashboard.css" rel="stylesheet" /> <!-- Bắt buộc-->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="input-group">
+        <input ref="name" id="name" type="text" class="form-control" aria-label="search by name">
+        <button type="button" class="btn btn-primary">Search</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span className="caret"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <form class="container">
+              <div class="form-group row">
+                <label for="type" class="col-2 col-form-label">Filter by</label>
+                <select class="form-control col" id="type" ref="type">
+                  <option selected>All projects</option>
+                  <option value=1>My projects</option>
+                  <option value=2>Founded projects</option>
+                  <option value=3>Invested projects</option>
+                  <option value=4>Reviewed projects</option>
+                  <option value=5>Served projects</option>
+                  <option value=6>Followed projects</option>
+                </select>
+              </div>
+              <div class="form-group row">
+                <label for="description" class="col-2 col-form-label">Description</label>
+                <input type="text" class="form-control col" id="description" ref="description"
+                  aria-describedby="basic-addon3">
+              </div>
+              <div class="form-group row">
+                <label for="keywords" class="col-2 col-form-label">Keywords</label>
+                <input type="text" class="form-control col" id="keywords" ref="keywords"
+                  placeholder="User comma to separate keywords" aria-describedby="basic-addon3">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
