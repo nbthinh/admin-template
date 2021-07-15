@@ -134,61 +134,67 @@
         </div>
       </nav>
       <div class="content">
-        <!-- Type your code here -->
-        <div class="row">
-          <div class="col-md-12" style="text-align: center;">
-            <h3 class="description" style="font-weight: bold; color: #05206e;">TẠO TÀI KHOẢN NHÂN VIÊN</h3>
-          </div>
-        </div>
         <div class="row">
           <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-12"></div>
           <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12">
-            <form action="/admin-create-employee-account">
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                  <div class="form-group">
-                    <label for="employee_email">Email</label>
-                    <input type="email" class="form-control" id="employee_email" name="employee_email" aria-describedby="emailHelp" placeholder="Nhập địa chỉ email" required>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                  <div class="form-group">
-                    <label for="employee_password">Mật khẩu</label>
-                    <input type="password" class="form-control" id="employee_password" name="employee_password" aria-describedby="passwordHelp" placeholder="Nhập password" required>
-                  </div>
-                </div>                
+            <div class="card">
+              <div class="card-header ">
+                <h5 class="card-title"
+                  style="font-weight: bold; color: #05206e; text-transform: uppercase; text-align: center;">Tạo tài khoản nhân viên</h5>
               </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="employee_name">Họ tên nhân viên</label>
-                    <input type="text" class="form-control" id="employee_name" name="employee_name" aria-describedby="nameHelp" placeholder="Nhập họ tên nhân viên" required>
+              <div class="card-body">
+                <br/>
+                <form action="/admin-create-employee-account">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                      <div class="form-group">
+                        <label for="employee_email">Email</label>
+                        <input type="email" class="form-control" id="employee_email" name="employee_email" aria-describedby="emailHelp" placeholder="Nhập địa chỉ email" required>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                      <div class="form-group">
+                        <label for="employee_password">Mật khẩu</label>
+                        <input type="password" class="form-control" id="employee_password" name="employee_password" aria-describedby="passwordHelp" placeholder="Nhập password" required>
+                      </div>
+                    </div>                
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="employee_phone">Số điện thoại nhân viên</label>
-                    <input type="text" class="form-control" id="employee_phone" name="employee_phone" aria-describedby="phoneHelp" placeholder="Nhập số điện thoại" required>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="employee_name">Họ tên nhân viên</label>
+                        <input type="text" class="form-control" id="employee_name" name="employee_name" aria-describedby="nameHelp" placeholder="Nhập họ tên nhân viên" required>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="employee_address">Địa chỉ</label>
-                    <input type="text" class="form-control" id="employee_address" name="employee_address" aria-describedby="addressHelp" placeholder="Nhập địa chỉ nhân viên" required>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="employee_phone">Số điện thoại nhân viên</label>
+                        <input type="text" class="form-control" id="employee_phone" name="employee_phone" aria-describedby="phoneHelp" placeholder="Nhập số điện thoại" required>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="employee_address">Địa chỉ</label>
+                        <input type="text" class="form-control" id="employee_address" name="employee_address" aria-describedby="addressHelp" placeholder="Nhập địa chỉ nhân viên" required>
+                      </div>
+                    </div>
+                  </div>
+                  <hr/>
+                  <div class="row">
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-block btn-outline-primary">TẠO TÀI KHOẢN NHÂN VIÊN</button>
+                    </div>
+                  </div>
+                </form>
+                <br/>
+                <br/>
               </div>
-              <hr/>
-              <div class="row">
-                <div class="col-12">
-                  <button type="submit" class="btn btn-block btn-outline-primary">TẠO TÀI KHOẢN NHÂN VIÊN</button>
-                </div>
-              </div>
-            </form>
+            </div>
+            
           </div>
           <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-12"></div>
         </div>
